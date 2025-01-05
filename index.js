@@ -22,8 +22,8 @@ app.get("/", (req, res) => {
 
 app.post("/", async (req, res) => {
     await sendLogToCloudWatch(
-        "codestar-loggroup",
-        "codestar-logstream",
+        "monitor-lab3",
+        "monitor-lab3-logstream",
         req.body.text
     );
 
